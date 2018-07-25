@@ -1,0 +1,20 @@
+extends ../template
+
+block variables
+  - var title = 'Тестовое задание'
+
+block content
+
+  .bg
+    .bg__left
+    .bg__right
+    
+    form.form#form(method="post" action="")
+      input.form__input#amount(type="text" name="amount" placeholder="Введите n" value="2")
+      button.btn.form__btn#btn(type="submit") Ввести
+
+  .container
+  
+  button.btn#pull(type="submit") Вывести
+
+  .numbers
