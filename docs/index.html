@@ -2,25 +2,151 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Тестовое задание</title>
+    <title>Konnikov</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/main.min.css">
+    <link rel="shortcut icon" href="./assets/img/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/main.min.css">
   </head>
   <body>
     <div class="wrapper">
-      <div class="bg">
-        <div class="bg__left"></div>
-        <div class="bg__right"></div>
-        <form class="form" id="form" method="post" action="">
-          <input class="form__input" id="amount" type="text" name="amount" placeholder="Введите n" value="2">
-          <button class="btn form__btn" id="btn" type="submit">Ввести</button>
-        </form>
+      <header class="header header--main">
+        <div class="container">
+          <div class="header__left"><a class="header__logo logo" href="/"><img class="logo__img" src="./assets/img/logo.png"></a></div>
+          <div class="header__right">
+            <div class="header__menu"><img src="./assets/img/icons/menu.png"></div>
+            <div class="header__menu-block mobile-menu">
+              <div class="mobile-menu__top">
+                <div class="mobile-menu__tel"><a class="mobile-menu__tel-link tel-link" href="tel: +74992905423">+7 499 290 54 23</a></div><span class="mobile-menu__close"><img src="./assets/img/icons/close-bold.png"></span>
+              </div>
+              <div class="mobile-menu__center">
+                <ul class="mobile-menu__nav-list nav__list">
+                  <li class="mobile-menu__nav-item nav__item"><a class="mobile-menu__nav-link nav__link nav__link--active" href="/services.html">Услуги</a></li>
+                  <li class="mobile-menu__nav-item nav__item"><a class="mobile-menu__nav-link nav__link" href="/team.html">Команда</a></li>
+                  <li class="mobile-menu__nav-item nav__item"><a class="mobile-menu__nav-link nav__link" href="/portfolio.html">Работы</a></li>
+                  <li class="mobile-menu__nav-item nav__item" id="news-item"><a class="mobile-menu__nav-link nav__link" href="/news.html">Новости и медиа</a></li>
+                  <li class="mobile-menu__nav-item nav__item" id="donat-item"><a class="mobile-menu__nav-link nav__link" href="/reviews.html">Отзывы</a></li>
+                  <li class="mobile-menu__nav-item nav__item" id="help-item"><a class="mobile-menu__nav-link nav__link" href="/memo.html">Памятка</a></li>
+                  <li class="mobile-menu__nav-item nav__item" id="help-item"><a class="mobile-menu__nav-link nav__link" href="/contacts.html">Контакты</a></li>
+                </ul>
+                <div class="mobile-menu__lang"><span class="mobile-menu__lang-icon"><img src="./assets/img/icons/rus.png"></span><span class="mobile-menu__lang-icon"><img src="./assets/img/icons/eng.png"></span></div>
+              </div>
+              <div class="mobile-menu__bottom">
+                <div class="mobile-menu__info">
+                  <div class="mobile-menu__info-block"><a class="mobile-menu__info-link">Правовая информация</a></div>
+                  <div class="mobile-menu__info-block"><a class="mobile-menu__info-link">Facebook</a><a class="mobile-menu__info-link">Instagram</a><a class="mobile-menu__info-link">Youtube</a><a class="mobile-menu__info-link">Vkontakte</a><a class="mobile-menu__info-link">Odnoklassniki</a></div>
+                </div>
+                <div class="mobile-menu__button"><a class="button mobile-menu__button-link" href="#">Заказать консультацию</a></div>
+              </div>
+            </div>
+            <div class="header__nav nav">
+              <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link nav__link--active" href="/services.html">Услуги</a></li>
+                <li class="nav__item"><a class="nav__link" href="/team.html">Команда</a></li>
+                <li class="nav__item"><a class="nav__link" href="/portfolio.html">Работы</a></li>
+                <li class="nav__item" id="news-item"><a class="nav__link" href="/news.html">Новости и медиа</a></li>
+                <li class="nav__item" id="donat-item"><a class="nav__link" href="/reviews.html">Отзывы</a></li>
+                <li class="nav__item" id="help-item"><a class="nav__link" href="/memo.html">Памятка</a></li>
+                <li class="nav__item" id="help-item"><a class="nav__link" href="/contacts.html">Контакты</a></li>
+              </ul>
+              <div class="header__tel"><a class="header__tel-link tel-link" href="tel: +74992905423">+7 499 290 54 23</a></div>
+              <div class="header__button"><a class="button header__button-link" href="#">Заказать консультацию</a></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="main main--flex">
+        <div class="main__nav">
+          <ul class="main__nav-list">
+            <li class="main__nav-item main__nav-item--active"></li>
+            <li class="main__nav-item"></li>
+            <li class="main__nav-item"></li>
+            <li class="main__nav-item"></li>
+          </ul>
+        </div>
+        <div class="container main__container">
+          <div class="main__section-info section section--active">
+            <div class="main__info">
+              <h1 class="title72 main__title">Клиника Олега Конникова</h1>
+              <div class="main__title-text"><span>Олег Конников</span> - эксперт первого канала по стоматологии</div>
+              <div class="arrow main__arrow down-btn"></div>
+            </div>
+            <div class="main__img-container"><img class="main__img" src="./assets/img/main-photo.png"></div>
+          </div>
+          <div class="main__section-about section">
+            <div class="section__content">
+              <h1 class="title section__title">О клинике</h1>
+              <div class="text">
+                <p>Эта концепция дала возможность увидеть совершенство каждого человека, она позволила относиться к каждому человеку, как к идеальному творению, совершенному созданию.</p>
+                <p>Мы — это последняя инстанция, мы занимаемся не лечением одного зуба, мы занимаемся диагностикой, исследованием и реабилитацией всей жевательной системы. Находим новое положение нижней челюсти, в котором все мышцы, приводящие к повышенной стираемости зубов, находятся в состояние равномерного покоя , восстанавливая потерянную высоту нижней трети лица и придающая лицу молодость и спокойствие. В этом положении моделируем новую жизнь и определяем качество жизни человека на долгие десятилетия!</p>
+                <p>Мне нравится, что в нашей работе мы каждый день помогаем людям, делаем их мир совершенней, при этом занимаясь своим любимым делом.</p>
+                <p>Реакция искреннего счастья пациента после проделанной работы — это потрясающее ощущение; Именно оно заставляет работать больше и больше.</p>
+                <p>Мы владеем всеми самыми современными и инновационными методами и материалами в Мире.</p>
+                <p>Я считаю, что Хороший врач должен любить своих пациентов, не идти на компромиссы с совестью, много учиться и много работать, именно поэтому в нашей команде — лучшие доктора страны, использующие командный комплексный подход в работе и работающие на благо пациента. Мы распутываем клубок неудач, связанных с прошлым стоматологическим лечением и, именно поэтому, являемся последней инстанцией для пациентов. В моей клинике для решения этих проблем принимает участие ряд специалистов смежных специальностей.</p>
+                <p>Ждём Вас на консультации!</p>
+              </div>
+            </div>
+            <div class="arrow section__arrow up-btn"></div>
+          </div>
+          <div class="main__section-diploms section">
+            <div class="section__content">
+              <h1 class="title section__title">Дипломы и сертификаты</h1>
+              <ul class="diploms__images-list">
+                <li class="diploms__images-item"><img src="./assets/img/diplom.jpg"></li>
+                <li class="diploms__images-item"><img src="./assets/img/diplom.jpg"></li>
+                <li class="diploms__images-item"><img src="./assets/img/diplom.jpg"></li>
+                <li class="diploms__images-item"><img src="./assets/img/diplom.jpg"></li>
+                <li class="diploms__images-item"><img src="./assets/img/diplom.jpg"></li>
+                <li class="diploms__images-item"><img src="./assets/img/diplom.jpg"></li>
+                <li class="diploms__images-item"><img src="./assets/img/diplom.jpg"></li>
+                <li class="diploms__images-item"><img src="./assets/img/diplom.jpg"></li>
+              </ul>
+            </div>
+            <div class="arrow section__arrow up-btn"></div>
+          </div>
+        </div>
+        <div class="main__news">
+          <div class="main__news-content">
+            <ul class="main__news-list">
+              <li class="main__news-item">
+                <h2 class="main__news-title">Новый адерс клиники</h2>
+                <p class="main__news-text">Мы открыли самый инновационный и современный центр стоматологии в Москве. Наш новый адрес: г. Москва, улица Земляной Вал, 52/16с3. Добро пожаловать!</p><a class="link main__news-link" href="./article-info.html">Читать полностью</a>
+              </li>
+              <li class="main__news-item">
+                <h2 class="main__news-title">Вредно ли подпиливать зубы после брекитов</h2><a class="main__news-video" href="./video-info.html"><img src="./assets/img/news.jpg"></a>
+              </li>
+              <li class="main__news-item">
+                <h2 class="main__news-title">Статья для elle.ru: как прикус влияет на внешность</h2>
+                <p class="main__news-text">Прикус влияет на внешнее старение человека. В частности, возрастные изменения прикуса могут добавить нашей внешности 10–15 лет</p><a class="link main__news-link" href="./article-info.html">Читать полностью</a>
+              </li>
+            </ul>
+          </div><a class="main__news-button" href="./news.html">Все статьи и видео</a>
+        </div>
       </div>
-      <div class="container"></div>
-      <button class="btn" id="pull" type="submit">Вывести</button>
-      <div class="numbers"></div>
+      <div class="img-prev">
+        <div class="img-prev__container">
+          <div class="img-prev__photo"><img src="./assets/img/diplom-big.jpg"></div>
+          <div class="arrow img-prev__close"></div>
+        </div>
+      </div>
+      <footer class="footer footer--main">
+        <div class="container footer__container">
+          <div class="footer__left">
+            <div class="footer__nav nav">
+              <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Адрес</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Соц. сети</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Правовая информация</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__right">
+            <div class="footer__lang"><span class="footer__lang-icon"><img src="./assets/img/icons/rus.png"></span><span class="footer__lang-icon"><img src="./assets/img/icons/eng.png"></span></div>
+          </div>
+        </div>
+      </footer>
     </div>
-    <script src="./assets/scripts/bandle.js"></script>
+    <script src="./assets/scripts/bundle.js"></script>
   </body>
 </html>
